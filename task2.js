@@ -1,11 +1,11 @@
 const a = process.argv[2];
 const b = process.argv[3];
-const len = a.length;
 
-const task2 = () => {
+const task2 = (a, b) => {
+
     if (a.length != b.length) return -1;
 
-    const a1 = a[0];
+    const len = a.length;
     let count = 0;
     
     for (let i = 0; i < len; i++) {
@@ -29,6 +29,6 @@ const task2 = () => {
     return -1;
 }
 
-const output = task2();
+const output = task2(a, b).toString();
 
-console.log(output);
+process.stdout.write(output);
