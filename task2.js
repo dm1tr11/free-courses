@@ -21,7 +21,7 @@ const task2 = (a, b) => {
 
         if (count) {
             return i == 0 ? 0 :
-                i > Math.round(len / 2) ? len - i : i;
+                i > Math.floor(len / 2) ? len - i : i;
         }
 
     }
